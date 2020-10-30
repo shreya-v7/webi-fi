@@ -1,0 +1,230 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0" >
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Webi-Fi</title>
+
+        <link rel="stylesheet" href="../css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+        
+        </head>
+
+    <body>
+        <div class="navigation">
+        <nav><!--NAVBAR-->
+			<div class="menu-icon">
+        		<i class="fas fa-bars"></i>
+        	</div>
+			<div class="navbar">
+				<ul>
+                    <div class="logo">
+                        <h1><i class="fas fa-sign"></i>Webi-Fi</h1>
+                    </div>
+					<li><a href="index">HOME</a></li>
+					<li><a href="about">ABOUT</a></li>
+					<li><a href="courses">CATALOGUE</a></li>
+					<li><a href="facts">FACTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <% if(!currentUser){ %>
+          <li><a href="/login"><i class="far fa-user"></i></a></li>
+          <%	} else { %>
+          <li><a href="/dashboard">Dashboard</a></li>
+          <%	} %>
+        </ul>
+			</div>
+        </nav>
+        </div>
+
+        <br><br><br>
+
+        <center>
+        <div class="about">
+            <p>
+                A well curated list of courses and their contents were put together
+                by our faculties. These faculties have unique teaching methods and
+                innovatiove ideas for you to to make use of. Here is some information
+                on the faces behind this website. We will be readilty available to
+                clarify any doubts regarding the working of our website. You are most
+                likely to see some of these faces throughtout the courses. Go ahead
+                and read on!
+            </p>
+        </div></center>
+
+        <br><br><br><br>
+
+        <center><div class="team">
+            <h1>Team</h1>
+        </div></center>
+
+        <br><br><br><br>
+
+        <div class="team-pics">
+            <div class="team-column">
+                <div class="team-row">
+                    <div class="pic">
+                        <img src="../img/dp1.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <div class="text">
+                            Shreya Verma, our frontend expert. She is a freelancer and a co-owner of
+                            this website. She worked on the very website you're on right now. Wish to
+                            be an expert? Learn from the expert.
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-row">
+                    <div class="pic">
+                        <img src="../img/dp2.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <div class="text">
+                            Ishita Tiwari, our content curator. Wish the site to look professional or a
+                            little friendly? Learn how to bring all the components of a website together
+                            from our co-owner.
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-row">
+                    <div class="pic">
+                        <img src="../img/dp3.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <div class="text">
+                            JJ, our backend expert. Learn how to handle your database and understand the
+                            working pronciples beihnd it with one of the greatest teacher to have ever
+                            taught in UCLA, right at home.
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <!--Testimonials-->
+
+
+        <div class="wrapper">
+          <center><div class="wrapper-heading">
+              <h1>Testimonials</h1><br><br></div></center>
+            <div class="t">
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="https://i.imgur.com/2pGPLrl.png" alt="Team_image">
+                </div><br><br><br>
+                <h3>Paul Doe</h3>
+                <p class="role">UI developer</p>
+                <p>This is a fascinating initiative. It not only helps the
+                    privileged but also the not privileged sections of the society.
+                    The UI course offered here is commendable. The sheer depth of
+                    the course along with the easy to follow directions makes it
+                    extraordinary.
+                </p>
+              </div>
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="https://i.imgur.com/jQj1I8E.png" alt="Team_image">
+                </div><br><br><br>
+                <h3>Rosie Meg</h3>
+                <p class="role">Tester</p>
+                <p>This program is nothing short of what it claims to be.
+                    These courses offer an interactive platform within them for people
+                    to converse at all times and for the experts to answer questions
+                    posted in the expert opinion section. It has a huge application of
+                    abstraction as well as intergrity.
+                </p></div>
+              <div class="team_member">
+                <div class="team_img">
+                  <img src="https://i.imgur.com/2Necikc.png" alt="Team_image">
+                </div><br><br><br>
+                <h3>Alex Wood</h3>
+                <p class="role">Support Lead</p>
+                <p>It provides
+                    a great learning experience by the site itself being an example of
+                    what can be accomplished. The special additions in the course for
+                    students to deal with almost every kind of error and hosting issues
+                    is a much needed tool and thats what places Webi-Fi among the top.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br><br><br><br>
+
+        <!--CONTACT-->
+        <section id="contact">
+        <div class="contact">
+        	<div class="container-pic">
+        	  <div class="row">
+        		<div class="column">
+                    <h2>Info</h2>
+        			<p>45% of the amount recieved from the courses offered are sent
+                        to NGOs to facilitate a better learning environment. Thank you
+                        for joining us.</p>
+                        <center><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></center>
+                        <p class="pt-4 text-muted">Copyright © 2020 All rights reserved | <i class="fas fa-heart"></i></p>
+        		</div>
+        		<div class="column">
+                    <h2>Newsletter</h2>
+                    <p>Get daily updates<br>Technical ideas and aspects of web pages<br>
+                        <br><br><br>
+                        <center><form>
+                            <a href="news" style="color: whitesmoke;">Enroll for newsletter</a>
+                            <!-- <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                            <button type="submit" class="btn-news">Send</button> -->
+                        </form></center>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Get in Touch</h2>
+                    <p class="touch"><i class="fas fa-user-circle"></i>Team Webi-Fi<br>
+                        <i class="fas fa-map-marker-alt"></i></a>Gurgaon, Delhi NCR, Haryana<br>
+                        <i class="fas fa-mobile-alt"></i>+91-9889889889<br>
+                        <i class="fas fa-envelope-square"></i>webi_fi@gmail.com
+                    </p>
+        		</div>
+        	</div>
+        </div>
+        </div>
+        </section>
+
+
+
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    
+
+
+        <script type="text/javascript">
+
+          $(document).ready(function(){
+              $(".menu-icon").on("click", function(){
+                  $("nav ul").toggleClass("showing");
+              });
+          });
+
+          $(window).on("scroll", function(){
+              if($(window).scrollTop()){
+                  $('nav').addClass('black');
+              }
+              else{
+                  $('nav').removeClass('black');
+              }
+          });
+
+      </script>
+</html>

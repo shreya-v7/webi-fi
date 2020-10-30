@@ -1,0 +1,234 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0" >
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Webi-Fi</title>
+
+        <link rel="stylesheet" href="../css/style.css" />  
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+        <style>
+            table{
+                padding: 10px;
+                width: 95%;
+                margin: 20px;   
+                text-align: center;
+            }
+            table th{
+                padding: 20px;
+                background-color: rgba(241, 117, 15, 0.986);
+                color: white;
+                font-size: 20px;
+            }
+            table td{
+                padding: 20px;
+                border-bottom: 2px solid rgb(54, 51, 51);
+            }
+            table a{
+                text-decoration: none;
+                color: white;
+                padding: 10px;
+                border-radius: 20px;
+                background-color: rgb(0, 204, 255);
+            }
+            table a:hover{
+                text-decoration: none;
+                color: rgb(8, 8, 8);
+                padding: 10px;
+                border: 2px solid black;
+                border-radius: 20px;
+                background-color: rgb(246, 252, 253);
+            }
+        </style>
+        </head>
+
+    <body>
+        <div class="navigation">
+        <nav><!--NAVBAR-->
+			<div class="menu-icon">
+        		<i class="fas fa-bars"></i>
+        	</div>
+			<div class="navbar">
+				<ul>
+                    <div class="logo">
+                        <h1><i class="fas fa-sign"></i>Webi-Fi</h1>
+                    </div>
+					<li><a href="index">HOME</a></li>
+					<li><a href="about">ABOUT</a></li>
+					<li><a href="courses">CATALOGUE</a></li>
+					<li><a href="facts">FACTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <% if(!currentUser){ %>
+                    <li><a href="/login"><i class="far fa-user"></i></a></li>
+                    <%	} else { %>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <%	} %>
+                </ul>
+			</div>
+        </nav>
+        </div>
+
+        <br><br><br>
+
+
+        <div class="card-front">
+            <h2>Courses we offer</h2>
+            <center><div class="card-title">
+                <h1>Front-end</h1>
+            </div></center>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Duration</th>
+                    <th>Material</th>
+                    <th>Assignments</th>
+                    <th>Perks</th>
+                    <th>Selection</th>
+                </tr>
+                <tr>
+                    <td>HTML + CSS</td>
+                    <td>2 Months</td>
+                    <td>Audio/Video Notes</td>
+                    <td>3 Quiz</td>
+                    <td>Certification</td>
+                    <td><a onclick="tologin()">Choose</a></td>
+                </tr>
+                <tr>
+                    <td>HTML + CSS + JS</td>
+                    <td>2-3 Months</td>
+                    <td>Audio/Video Notes</td>
+                    <td>3 Quiz</td>
+                    <td>Certification</td>
+                    <td><a onclick="coming()">Choose</a></td>
+                </tr>
+                <tr>
+                    <td>HTML + CSS + AJAX</td>
+                    <td>3-4 Months</td>
+                    <td>Audio/Video Notes</td>
+                    <td>3 Quiz</td>
+                    <td>Certification</td>
+                    <td><a href="/course-3">Choose</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card-back">
+            <center><div class="card-title">
+                <h1>Back-end</h1>
+            </div></center>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Duration</th>
+                    <th>Material</th>
+                    <th>Assignments</th>
+                    <th>Perks</th>
+                    <th>Selection</th>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>2 Months</td>
+                    <td>Audio/Video Notes</td>
+                    <td>3 Quiz</td>
+                    <td>Certification</td>
+                    <td><a href="/course-4">Choose</a></td>
+                </tr>
+                <tr>
+                    <td>Ruby</td>
+                    <td>2-3 Months</td>
+                    <td>Audio/Video Notes</td>
+                    <td>3 Quiz</td>
+                    <td>Certification</td>
+                    <td><a href="/course-5">Choose</a></td>
+                </tr>
+                <tr>
+                    <td>Django</td>
+                    <td>3-4 Months</td>
+                    <td>Audio/Video Notes</td>
+                    <td>3 Quiz</td>
+                    <td>Certification</td>
+                    <td><a href="/course-6">Choose</a></td>
+                </tr>
+            </table>
+            </div>
+
+        <!--CONTACT-->
+            <br><br><br><br><br>
+            <section id="contact">
+        <div class="contact">
+        	<div class="container">
+        	  <div class="row">
+        		<div class="column">
+                    <h2>Info</h2>
+        			<p>45% of the amount recieved from the courses offered are sent
+                        to NGOs to facilitate a better learning environment. Thank you
+                        for joining us. </p>
+                        <center><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></center>
+                        <p class="pt-4 text-muted">Copyright © 2020 All rights reserved | <i class="fas fa-heart"></i></p>
+        		</div>
+        		<div class="column">
+                    <h2>Newsletter</h2>
+                    <p>Get daily updates<br>Technical ideas and aspects of web pages<br>
+                        <br><br><br>
+                        <center><form>
+                            <a href="news" style="color: whitesmoke;">Enroll for newsletter</a>
+                            <!-- <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                            <button type="submit" class="btn-news">Send</button> -->
+                        </form></center>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Get in Touch</h2>
+                    <p class="touch"><i class="fas fa-user-circle"></i>Team Webi-Fi<br>
+                        <i class="fas fa-map-marker-alt"></i></a>Gurgaon, Delhi NCR, Haryana<br>
+                        <i class="fas fa-mobile-alt"></i>+91-9889889889<br>
+                        <i class="fas fa-envelope-square"></i>webi_fi@gmail.com
+                    </p>
+        		</div>
+        	</div>
+        </div>
+        </div>
+        </section>
+
+
+
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    
+
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $(".menu-icon").on("click", function(){
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        function tologin(){
+            window = window.open("register")
+        }
+
+        function coming(){
+            alert("Coming Soon")
+        }
+
+    </script>   
+    <script src="../js/catalogue.js"></script>
+
+</html>

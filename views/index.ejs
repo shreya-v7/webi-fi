@@ -1,0 +1,237 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0" >
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Webi-Fi</title>
+
+        <link rel="stylesheet" href="../css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+        </head>
+
+
+
+    <body>
+
+        <div class="navigation">
+        <nav><!--NAVBAR-->
+            <div class="loader-container">
+                <div class="loader-text"><center><h2>Welcome</h2></center></div>
+            </div>
+			<div class="menu-icon">
+        		<i class="fas fa-bars"></i>
+        	</div>
+			<div class="navbar">
+				<ul>
+                    <div class="logo">
+                        <h1><i class="fas fa-sign"></i>Webi-Fi</h1>
+                    </div>
+					<li><a href="index">HOME</a></li>
+					<li><a href="about">ABOUT</a></li>
+					<li><a href="courses">CATALOGUE</a></li>
+					<li><a href="facts">FACTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <!-- <li><a href="login"><i class="far fa-user"></i></a></li> -->
+                    <% if(!currentUser){ %>
+                    <li><a href="/login"><i class="far fa-user"></i></a></li>
+                    <%	} else { %>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <%	} %>
+				</ul>
+			</div>
+        </nav>
+        </div>
+
+        <br><br><br>
+
+
+        <!--BANNER-->
+
+        <div class="banner">
+        	<div class="banner-sec-1">
+        	    <h2>Webi-Fi</h2>
+                <p>Explore the Web<br><br>
+                    Ever been tired of surfing on the internet only to realise that you
+                might have an idea worth implementing but struggled with the "how"
+                aspect of it? We're here with new, updated courses to help you with it.  <br><br>
+                    <a href="#small"><button type="button">Further</button></a></p>
+        	</div>
+        	<div class="banner-sec-2">
+        		<img src="../img/student.png">
+        	</div>
+        </div>
+
+        <section id="small"></section>
+        <br><br><br><br>
+
+        <!--SMALL INTRO-->
+
+        <div class="contanier-fluid">
+        <div class="intro">
+        	<div class="intro-sec-1">
+        	    <h2>What is Webi-Fi?</h2>
+                <p>Web-Fi is an online learning platform to provide people with opportunities
+                    to explore their areas of interest. Coding has only gained importance over time
+                    and will continue to grow as new ideas emerge everyday out of need or out of
+                    pure interest. We are here to help you expand your skillset and not only work in
+                    MNCs but also build an empire of your own.
+                </p>
+            </div>
+            <div class="intro-sec-2">
+        	    <h2>Importance of Webi-Fi?</h2>
+                <p>We believe that it's important for any student to be exposed to new methods of
+                    learning to make any domain interesting. Looking at the obsolete courses
+                    offered by most of the online sites and the redundancy in them, we decided
+                    to come up with solutions of our own. We emphasise on concepts which are new
+                    and are bound to gain importance in the future.
+                </p>
+        	</div>
+        </div>
+        </div>
+
+        <!--Counter-->
+        <br><br><br><br><br><br><br><br>
+        <div class="middle">
+            <div class="counting-sec">
+            <h1>Our Progress through years</h1>
+              <div class="inner-width">
+                <div class="col">
+                  <i class="far fa-smile-wink"></i>
+                  <div class="num">2567</div>
+                  Students Enrolled
+                </div>
+
+                <div class="col">
+                  <i class="fas fa-briefcase"></i>
+                  <div class="num">19</div>
+                  Courses
+                </div>
+
+                <div class="col">
+                  <i class="far fa-money-bill-alt"></i>
+                  <div class="num">20</div>
+                  Stakeholders (%)
+                </div>
+
+                <div class="col">
+                  <i class="far fa-object-group"></i>
+                  <div class="num">799</div>
+                  Projects Completed
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--DOWNLOAD-->
+        <center><div class="d">
+            <br><br><br><br>
+            <center><h1>Available</h1></center><br><br>
+            <center><h2>Download our app on all platforms, now learning will be more fun.</h2></center>
+            <br>
+            <div class="download">
+                <div class="d-1">
+                    <h2><i class="fas fa-desktop fa-3x py-2 pr-3"></i><br>Desktop<br>On website</h2>
+                </div>
+                <div class="d-2">
+                    <h2><i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i><br>Mobile<br>On app store</h2>
+                </div>
+            </div></center>
+        </div>
+        <br><br><br><br>
+
+
+
+
+        <!--CONTACT-->
+        <section id="contact">
+        <div class="contact">
+        	<div class="container">
+        	  <div class="row">
+        		<div class="column">
+                    <h2>Info</h2>
+        			<p>45% of the amount recieved from the courses offered are sent
+                        to NGOs to facilitate a better learning environment. Thank you
+                        for joining us.
+                    </p>
+                        <center><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></center>
+                        <p class="pt-4 text-muted">Copyright © 2020 All rights reserved | <i class="fas fa-heart"></i></p>
+        		</div>
+        		<div class="column">
+                    <h2>Newsletter</h2>
+                    <p>Get daily updates<br>Technical ideas and aspects of web pages<br>
+                        <br><br><br>
+                        <center><form>
+                            <a href="news" style="color: whitesmoke;">Enroll for newsletter</a>
+                        </form></center>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Get in Touch</h2>
+                    <p class="touch"><i class="fas fa-user-circle"></i>Team Webi-Fi<br>
+                        <i class="fas fa-map-marker-alt"></i></a>Gurgaon, Delhi NCR, Haryana<br>
+                        <i class="fas fa-mobile-alt"></i>+91-9889889889<br>
+                        <i class="fas fa-envelope-square"></i>webi_fi@gmail.com
+                    </p>
+        		</div>
+        	</div>
+        </div>
+        </div>
+        </section>
+
+
+
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    
+
+
+    <script type="text/javascript">
+
+        $(window).on("load",function(){
+            $(".loader-container").fadeOut(2000);
+        });
+
+            $(document).ready(function(){
+                $(".menu-icon").on("click", function(){
+                    $("nav ul").toggleClass("showing");
+                });
+            });
+
+            $(window).on("scroll", function(){
+                if($(window).scrollTop()){
+                    $('nav').addClass('black');
+                }
+                else{
+                    $('nav').removeClass('black');
+                }
+            });
+
+            $('.num').each(function () {
+                $(this).prop('Counter',0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 5000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+
+        </script>
+
+</html>

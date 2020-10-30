@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0" >
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        
+        <link rel="stylesheet" href="../css/style-d.css" />
+
+    </head>
+    <body>
+
+
+        <div class="main-conatainer">
+            <div class="head-part">
+                <nav>
+                    <div class="logo" style="font-size:18px;cursor:pointer" onclick="openNav()">
+                        <h1><i class="fas fa-sign"></i>Webi-Fi</h1>
+                        <h6>(Menu)</h6>
+                    </div>
+                    <div class="head-headers">
+                        <p><a href="index">Home</a></p>
+                        <p><a href="about">About</a></p>
+                        <p><a href="courses">Catalogue</a></p>
+                        <p><a href="facts">Facts</a></p>
+                        <p><a href="dashboard"><i class="fa fa-user" aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="clr"></div>
+                </nav>
+            </div>
+
+            
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="material">Material</a>
+            <a href="grade">Quiz</a>
+            <a href="editor">Editor</a>
+            <a href="certif">Certificate</a>
+            <a href="profile-edit">Profile</a>
+          </div>
+
+            <div class="navigation"></div>
+
+            <div class="clr"></div>
+
+            <br><br>
+
+            <div class="course-init">
+                <div class="calendar">
+                    <p id="monthname"></p>
+                    <p id="dayname"></p>
+                    <p id="daynumber"></p>
+                    <p id="year"></p>
+                </div>
+                <p id="intro-line">Course: HTML/CSS<br><span>Duration: 2 months</span>
+                    <br><span>Perks: Certification</span>
+                    <br><span>Material: Online/Offline</span>
+                </p>
+            </div>
+
+            <div class="clr"></div>
+
+            <div class="course-plan">
+                <div class="desc-box" id="course">
+                    <div class="first">
+                        <h1>Lorem Ipsum</h1>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged.</p>
+                    </div>
+                    <div class="second">
+                        <h1>Lorem Ipsum</h1>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged.</p>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script-d.js"></script>
+</html>

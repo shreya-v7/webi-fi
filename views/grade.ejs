@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0" >
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        
+        <link rel="stylesheet" href="../css/style-d.css" />
+
+    </head>
+    <body>
+
+
+        <div class="main-conatainer">
+            <div class="head-part">
+                <nav>
+                    <div class="logo" style="font-size:18px;cursor:pointer" onclick="openNav()">
+                        <h1><i class="fas fa-sign"></i>Webi-Fi</h1>
+                        <h6>(Menu)</h6>
+                    </div>
+                    <div class="head-headers">
+                        <p><a href="index">Home</a></p>
+                        <p><a href="about">About</a></p>
+                        <p><a href="courses">Catalogue</a></p>
+                        <p><a href="facts">Facts</a></p>
+                        <p><a href="dashboard"><i class="fa fa-user" aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="clr"></div>
+                </nav>
+            </div>
+
+            
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="material">Material</a>
+            <a href="grade">Quiz</a>
+            <a href="editor">Editor</a>
+            <a href="certif">Certificate</a>
+            <a href="profile-edit">Profile</a>
+          </div>
+
+            <div class="navigation"></div>
+
+            <div class="clr"></div>
+
+            <div class="attachments-head">
+                <p></i>Grades of Quizzes</p>
+            </div>
+
+            <div class="clr"></div>
+
+            <div class="grade" id="grade">
+                <div class="quizz">
+                    <table class="qiuz">
+                        <th>Quiz number</th>
+                        <th>Quiz Display</th>
+                        <th>Grade</th>
+                        <tr>
+                            <td class="quiz-no">Quiz-1</td>
+                            <td class="quiz-display">
+                                <iframe src="Quiz1" id="quiz-d-1" height="350px" width="650px"></iframe>
+                            </td>
+                            <td class="quiz-marks"><button onclick="sayhello1()">Marks: </button><p id="quizm1"></p></td>
+                        </tr>
+                        <tr>
+                            <td class="quiz-no">Quiz-2</td>
+                            <td class="quiz-display">
+                                <iframe src="Quiz2" id="quiz-d-2" height="350px" width="650px"></iframe>
+                            </td>
+                            <td class="quiz-marks"><button onclick="sayhello2()">Marks: </button><p id="quizm2"></p></td>
+                        </tr>
+                        <tr>
+                            <td class="quiz-no">Quiz-3</td>
+                            <td class="quiz-display">
+                                <iframe src="Quiz3" id="quiz-d-3" height="350px" width="650px"></iframe>
+                            </td>
+                            <td class="quiz-marks"><button onclick="sayhello3()">Marks: </button><p id="quizm3"></p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="clr"></div>
+
+        </div>
+    </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script-d.js"></script>
+</html>
