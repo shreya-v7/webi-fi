@@ -19,7 +19,7 @@ var LocalStrategy = require('passport-local');
 
 
 mongoose.connect(
-  "mongodb+srv://ishita:Viji1968@cluster1.4d1hs.mongodb.net/web?retryWrites=true&w=majority",
+  "mongodb+srv://..",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
